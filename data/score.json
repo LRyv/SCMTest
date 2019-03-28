@@ -1,0 +1,25 @@
+{
+    "total":3,
+    "data":[
+        {
+            "Stu_phid":10003,
+            "Kch_phid":10001,
+            "Ach":100
+        },
+        {
+            "Stu_phid":10003,
+            "Kch_phid":10002,
+            "Ach":99
+        },
+        {
+            "Stu_phid":10004,
+            "Kch_phid":10003,
+            "Ach":100
+        },
+        {
+            "Stu_phid":10005,
+            "Kch_phid":10003,
+            "Ach":100
+        }
+]
+}

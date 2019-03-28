@@ -1,0 +1,13 @@
+Ext.define("SCM.store.Course",{
+    extend:"Ext.data.Store",
+    alias:"store.Course",
+    model:"SCM.model.Course",
+    proxy:{
+        type:"ajax",
+        url:"./data/course.json",
+        reader:{
+            type:"json",
+            rootProperty:"data"
+        }
+    }
+});

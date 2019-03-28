@@ -1,0 +1,43 @@
+[
+    {
+        "id":"01",
+        "text": "学生管理",
+        "leaf": "false",
+        "expanded": true,
+        "children": [
+            {
+                "id": "studentlist",
+                "text": "学生信息",
+                "leaf": "true"
+            }
+        ]
+    },
+    {
+        "id":"02",
+        "text": "课程管理",
+        "leaf": "false",
+        "expanded": true,
+        "children": [
+            {
+                "id": "courselist",
+                "text": "课程信息",
+                "leaf": "true",
+                "children": ""
+            }
+        ]
+    },
+    {
+        "id":"03",
+        "text": "成绩管理",
+        "leaf": "false",
+        "expanded": true,
+        "children": [
+            {
+                "id": "scorelist",
+                "text": "学生成绩",
+                "leaf": "true",
+                "children": ""
+            }
+        ]
+    }
+]

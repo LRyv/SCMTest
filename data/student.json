@@ -1,0 +1,35 @@
+{
+	"total": 3,
+	"data": [
+		{
+			"phid": 10003,
+			"sid": 123,
+			"Name": "jotalo",
+			"Sex": 1,
+			"Bir": "2000-01-01",
+			"Class": "三班",
+			"Adr": "jo3",
+			"Remarks": ""
+		},
+		{
+			"phid": 10004,
+			"sid": 124,
+			"Name": "josigei",
+			"Sex": 1,
+			"Bir": "2000-01-01",
+			"Class": "四班",
+			"Adr": "jo4",
+			"Remarks": ""
+		},
+		{
+			"phid": 10005,
+			"sid": 125,
+			"Name": "joluno",
+			"Sex": 1,
+			"Bir": "2000-01-01",
+			"Class": "五班",
+			"Adr": "jo5",
+			"Remarks": ""
+		}
+	]
+}

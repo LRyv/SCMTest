@@ -1,0 +1,13 @@
+Ext.define("SCM.store.Score",{
+    extend:"Ext.data.Store",
+    alias:"store.score",
+    model:"SCM.model.Score",
+    proxy:{
+        type:"ajax",
+        url:"./data/score.json",
+        reader:{
+            type:"json",
+            rootProperty:"data"
+        }
+    }
+});

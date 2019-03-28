@@ -1,0 +1,10 @@
+Ext.define("SCM.store.TreeStore",{
+    extend:'Ext.data.TreeStore',
+    defaultRoodId:'root',
+    proxy:{
+        type:'ajax',
+        url:'./data/menutree.json',
+        reader:'json',
+        autoLoad:true
+    }
+});
