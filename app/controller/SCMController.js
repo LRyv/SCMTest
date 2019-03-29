@@ -1,8 +1,8 @@
 Ext.define('SCM.controller.SCMController', {
     extend: 'Ext.app.Controller',
-    views: ['Viewport', 'MenuTree','Student'],
-    stores: ['TreeStore', 'StudentStore'],
-    model: ['MenuModel', 'StudentModel'],
+    views: ['Viewport', 'MenuTree'],
+    stores: ['TreeStore'],
+    model: ['MenuModel'],
     //通过init函数来监听视图事件，控制视图与控制器的交互
     init: function () {
         //init函数通过this.control来负责监听
