@@ -1,4 +1,4 @@
-Ext.define('SCM.model.TreeModel', {
+Ext.define('SCM.model.Nav', {
     extend: 'Ext.data.Model',
     fields:[
         {name:'id', type:'int'},

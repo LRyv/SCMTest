@@ -1,0 +1,45 @@
+{
+    "expanded": true,
+    "children": [
+        {
+            "text": "学生管理",
+            "leaf": false,
+            "cls": "node-link",
+            "expanded": true,
+            "children": [
+                {
+                    "id": "studentlist",
+                    "text": "学生信息",
+                    "leaf": true,
+                    "cls": "node-link",
+					"mod": "studentlist",
+					"modUrl": "student.List"
+                }
+            ]
+        },
+        {
+            "text": "课程管理",
+            "leaf": false,
+            "expanded": true,
+            "children": [
+                {
+                    "text": "课程信息",
+                    "leaf": true,
+                    "children": ""
+                }
+            ]
+        },
+        {
+            "text": "成绩管理",
+            "leaf": false,
+            "expanded": true,
+            "children": [
+                {
+                    "text": "学生成绩",
+                    "leaf": true,
+                    "children": ""
+                }
+            ]
+        }
+    ]
+}

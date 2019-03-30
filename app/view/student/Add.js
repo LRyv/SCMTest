@@ -6,9 +6,9 @@ var genderStore = Ext.create("Ext.data.Store", {
     ]
 });
 
-Ext.define('SCM.view.student.Edit', {
+Ext.define('SCM.view.student.Add', {
     extend: 'Ext.window.Window',
-    alias: 'widget.studentedit',
+    alias: 'widget.studentadd',
     //title: '编辑学生信息',
     layout: 'fit',
     resizable: false,
@@ -74,9 +74,9 @@ Ext.define('SCM.view.student.Edit', {
                 }]
             }],
             buttons: [{
-                id: 'save',
+                id: 'create',
                 text: '保存',
-                action: 'update'
+                action: 'save'
             },
             {
                 text: '取消',

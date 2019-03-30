@@ -14,13 +14,4 @@ Ext.define("SCM.model.Student", {
 		{ name: "Adr", type: "varchar" },	//住址
 		{ name: "Remarks", type: "varchar" }//备注
 	],
-	store: {
-		gender: Ext.create("Ext.data.Store", {
-			fields: ["sexId", "sexName"],
-			data: [
-				[0, "女"],
-				[1, "男"]
-			]
-		})
-	}
 });

@@ -1,9 +1,9 @@
-Ext.define("SCM.store.TreeStore",{
+Ext.define("SCM.store.Navs",{
     extend:'Ext.data.TreeStore',
     defaultRoodId:'root',
     proxy:{
         type:'ajax',
-        url:'./data/menutree.json',
+        url:'./data/nav.json',
         reader:'json',
         autoLoad:true
     }
