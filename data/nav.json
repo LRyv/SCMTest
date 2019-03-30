@@ -8,10 +8,8 @@
             "expanded": true,
             "children": [
                 {
-                    "id": "studentlist",
                     "text": "学生信息",
                     "leaf": true,
-                    "cls": "node-link",
 					"mod": "studentlist",
 					"modUrl": "student.List"
                 }

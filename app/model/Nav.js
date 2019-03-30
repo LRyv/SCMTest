@@ -1,11 +1,9 @@
 Ext.define('SCM.model.Nav', {
-    extend: 'Ext.data.Model',
+    extend: 'Ext.data.TreeModel',
     fields:[
-        {name:'id', type:'int'},
-        {name:'pid', type:'int'},
-        {name:'text', type:'varchar'},
-        //type为布尔型时，后面的默认值是必须写的，要不会出错
-        {name:'leaf', type:'boolean', defaultValue: true},
-        {name: 'url', type:'varchar'}
+        {name:'text', type:'varchar'},        
+        {name:'leaf', type:'boolean', defaultValue: true},//type为布尔型时，后面的默认值是必须写的，要不会出错
+        {name: 'mod', type:'varchar'},
+        {name: 'modUrl', type:'varchar'}
     ]
 });

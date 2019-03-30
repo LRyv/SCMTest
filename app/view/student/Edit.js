@@ -19,7 +19,7 @@ Ext.define('SCM.view.student.Edit', {
         Ext.apply(this, {
             items: [{
                 xtype: 'form',
-                reference: 'sudentForm',
+                reference: 'studentlist',
                 defaultType: 'textfield',
                 default: {
                     anchor: '100%'
@@ -30,15 +30,20 @@ Ext.define('SCM.view.student.Edit', {
                     items: [{
                         xtype: 'hidden',
                         name: 'phid',
-                        fieldLabel: '主键',
+                        fieldLabel: '主键'
                     }, {
-                        xtype: 'textfield',
+                        xtype: 'numberfield',
                         name: 'sid',
-                        fieldLabel: '学号'
+                        fieldLabel: '学号',
+                        minValue:100,
+                        maxValue:999,
+                        hideTrigger: true,//是否隐藏上下调节按钮
+                        margin:'5,5,5,5'
                     }, {
                         xtype: 'textfield',
                         name: 'Name',
-                        fieldLabel: '姓名'
+                        fieldLabel: '姓名',
+                        margin:'5,5,5,5'
                     }, {
                         xtype: 'combobox',
                         name: 'Sex',
@@ -48,27 +53,32 @@ Ext.define('SCM.view.student.Edit', {
                         valueField: "Value",
                         value: 0,
                         editable: false,
-                        queryMode: "local"
+                        queryMode: "local",
+                        margin:'5,5,5,5'
                     }, {
                         xtype: 'datefield',
                         name: 'Bir',
                         fieldLabel: '出生年月',
                         format:'Y-m-d',
-                        editable: false
+                        editable: false,
+                        margin:'5,5,5,5'
                     }, {
                         xtype: 'textfield',
                         name: 'Class',
-                        fieldLabel: '班级'
+                        fieldLabel: '班级',
+                        margin:'5,5,5,5'
                     }, {
                         xtype: 'textfield',
                         name: 'Adr',
-                        fieldLabel: '住址'
+                        fieldLabel: '住址',
+                        margin:'5,5,5,5'
                     }, {
                         xtype: 'textarea',
                         name: 'Remarks',
                         fieldLabel: '备注',
                         grow: false,
-                        allowBlank: true
+                        allowBlank: true,
+                        margin:'5,5,5,5'
                     }]
 
                 }]
