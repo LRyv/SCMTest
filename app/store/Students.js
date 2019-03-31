@@ -1,6 +1,9 @@
 Ext.define('SCM.store.Students', {
 	extend: 'Ext.data.Store',
 	model: 'SCM.model.Student',
+	enablePaging: true,
+	// limit: itemPerPage,
+	pageSize: 3,
 	autoLoad: true,
 	proxy: {
 		type: 'ajax',
@@ -11,7 +14,8 @@ Ext.define('SCM.store.Students', {
 		reader: {
 			type: 'json',
 			root: 'data',
-			successProperty: 'success'
+			successProperty: 'success',
+			totalProperty: 'total'
 		}
 	}
 });

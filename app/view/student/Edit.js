@@ -13,7 +13,7 @@ Ext.define('SCM.view.student.Edit', {
     layout: 'fit',
     resizable: false,
     autoShow: true,
-    //modal:true,
+    modal:true,
     initComponent: function () {
 
         Ext.apply(this, {

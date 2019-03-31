@@ -20,6 +20,12 @@ Ext.define('SCM.view.Viewport', {
                 //title: '主题内容显示',
                 layout: 'fit',
                 collapisble: true,
+                items: [{
+                    id: 'studentlist',
+                    xtype: 'studentlist',
+                    title: '学生信息',
+                    closable: true,
+                }]
             }]
         });
         Ext.QuickTips.init();

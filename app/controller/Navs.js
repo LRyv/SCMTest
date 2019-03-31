@@ -11,9 +11,6 @@ Ext.define('SCM.controller.Navs', {
             'nav': {
                 //监听鼠标点击事件，点击后调用onMenuClick方法
                 itemclick: this.onMenuClick,
-                //监听鼠标右键事件，点击后调用contextMenu方法
-                itemcontextmenu: this.contextMenu,
-
             }
         });
     },
@@ -23,12 +20,13 @@ Ext.define('SCM.controller.Navs', {
         var me = this;
         var mod = rec.raw.mod;
         var modUrl = "SCM.view." + rec.raw.modUrl;
+        var isLeaf = rec.get('leaf');
         if (mod && modUrl) {
             Ext.require([modUrl], function () {
                 me.loadModule(rec.raw);
             });
-        } else {
-            Ext.Msg.alert("错误", "加载模块失败！");
+        } else if (isLeaf) {
+            Ext.Msg.alert("提示", "#"+rec.get('text') + "# 模块尚未完工，敬请期待！");
         }
     },
 
@@ -52,16 +50,4 @@ Ext.define('SCM.controller.Navs', {
         }
 
     },
-
-
-
-    //显示右键菜单方法
-    contextMenu: function (tree, record, item, index, e, eOpts) {
-        //阻止浏览器默认右键事件
-        e.preventDefault();
-        e.stopEvent();
-        //显示右键菜单
-        var view = Ext.widget('contextmenu');
-        view.showAt(e.getXY());
-    }
 });
